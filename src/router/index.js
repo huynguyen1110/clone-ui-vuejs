@@ -14,6 +14,16 @@ const router = createRouter({
                     component: () => import('@/views/Dashboard.vue')
                 },
                 {
+                    path: '/register',
+                    name: 'register',
+                    component: () => import('@/views/pages/register/Register.vue')
+                },
+                {
+                    path: '/register-success',
+                    name: 'register-success',
+                    component: () => import('@/views/pages/register/RegisterSuccessfully.vue')
+                },
+                {
                     path: '/uikit/formlayout',
                     name: 'formlayout',
                     component: () => import('@/views/uikit/FormLayout.vue')
